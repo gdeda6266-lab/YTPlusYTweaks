@@ -53,3 +53,6 @@ jobs:
       with:
         name: YTPlusTweaks-IPA
         path: app/YTPlusTweaks.ipa
+
+    - name: Trigger refresh
+      run: echo "Refreshing workflow detection"
