@@ -1,12 +1,17 @@
 # YouTube Plus (YTweaks Fork)
 [YouTube Plus](https://github.com/dayanch96/YTLite) with added plugins.
 
+v20.10.4 is ***strongly*** recommended for proper compatibility
+
+[NOTE] Some users are reporting a prompt to update, blocking app usage on 20.10.4. This is a known issue and is being looked into
+
 This repo focuses on simplifying the build process of YouTube Plus, and adding more optional tweaks to bundle with it (specifically [YTweaks](https://github.com/fosterbarnes/YTweaks)). No changes have been made to the YouTube Plus .deb itself, just the tweaks that get packaged with it. 
 
 When building the app, the latest stable YouTube Plus .deb is downloaded from the original repo, then other tweaks are built from source. All tweaks are then injected into your IPA.
 
 YTweaks added settings:
 - **Fullscreen to the right or left:** Locks fullscreen orientation.
+- **Night Mode**: Lowers brightness below device minimum by "faking it" with an app-wide semi-transparent black overlay. Works best on OLED devices.
 - **Disable floating miniplayer:** Restores the old miniplayer by disabling the floating miniplayer.
 - **Virtual fullscreen bezels:** Adds invisible touch-safe zones on black bars to prevent accidental taps and skips.
 - **Fix Casting** - Attempts to fix casting by changing some A/B flags. Only works on v20.10.4 or lower
@@ -65,7 +70,7 @@ If you plan on testing, adding tweaks that aren't integrated with this repo, mak
 <strong>Additional workflow options:</strong><br>
 - The version of YTLite to use:<br>
   <em>Input a release tag from [dayanch96/YTLite/tags](https://github.com/dayanch96/YTLite/tags)</em><br>
-  Example: `5.2b3` or `v5.2b3`<br>
+  Example: `5.2b3` or `v5.2b4`<br>
 - iOS SDK Version:<br>
   <em>16.5 should be used for older devices, 18.6 can be used for newer devices</em><br>
   Example: `16.5`<br>
@@ -265,8 +270,8 @@ Fill out an [issue form](https://github.com/fosterbarnes/YTPlusYTweaks/issues) w
 ## Supported YouTube Version
 <ul>
     <li><strong>Recommended:</strong> <em>20.10.4</em></li>
-   <li><strong>Latest confirmed:</strong> <em>21.02.3</em></li>
-   <li><strong>Date tested:</strong> <em>Jan 17, 2025</em></li>
+   <li><strong>Latest confirmed:</strong> <em>21.13.6</em></li>
+   <li><strong>Date tested:</strong> <em>April 4, 2026</em></li>
    <li><strong>YouTube Plus:</strong> <em>5.2 beta 4</em></li>
 </ul>
 
